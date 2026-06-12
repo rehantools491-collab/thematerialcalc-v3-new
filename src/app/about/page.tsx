@@ -45,7 +45,7 @@ export default function AboutPage() {
         <div className="max-w-content mx-auto px-6">
           <h2 className="heading-2 mb-4">Our Mission</h2>
           <p className="text-base text-gray-600 leading-relaxed mb-4">
-            MaterialCalc was created to solve a simple problem: calculating construction materials shouldn&apos;t be complicated. Whether you&apos;re a homeowner planning a backyard patio, a DIYer tackling a weekend project, or a contractor estimating materials for a client, you need fast and accurate numbers you can trust.
+            MaterialCalc was founded by Rehan Ilahi to provide free, accurate construction calculators for homeowners, DIY enthusiasts, contractors, and builders.
           </p>
           <p className="text-base text-gray-600 leading-relaxed">
             We build free online calculators that give you precise material quantities in seconds. No signups. No paywalls. No guesswork. Just enter your project dimensions, and get the results you need to order with confidence.
