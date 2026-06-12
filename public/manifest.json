@@ -1,0 +1,16 @@
+{
+  "name": "MaterialCalc — Free Construction Calculators",
+  "short_name": "MaterialCalc",
+  "description": "Free construction calculators for homeowners, DIYers, and contractors.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1B365D",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

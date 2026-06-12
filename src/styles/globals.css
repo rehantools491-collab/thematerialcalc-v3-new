@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply text-gray-600 font-sans;
+  }
+  *:focus-visible {
+    @apply outline-2 outline-orange outline-offset-2;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-container mx-auto px-6;
+  }
+  .section-padding {
+    @apply py-12 md:py-16;
+  }
+  .heading-1 {
+    @apply text-[28px] md:text-[36px] font-bold text-navy leading-tight;
+  }
+  .heading-2 {
+    @apply text-[22px] md:text-[28px] font-bold text-navy leading-tight;
+  }
+  .heading-3 {
+    @apply text-[18px] md:text-[22px] font-semibold text-navy leading-tight;
+  }
+  .btn-primary {
+    @apply w-full h-12 md:h-[52px] bg-orange text-white font-bold rounded-lg
+    hover:bg-orange-dark hover:-translate-y-[1px] hover:shadow-lg
+    active:translate-y-0 active:shadow-none
+    disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed
+    transition-all duration-150 text-[15px] md:text-base;
+  }
+  .btn-secondary {
+    @apply px-4 h-9 border border-gray-100 rounded-md text-sm font-medium text-gray-400
+    hover:bg-gray-50 hover:text-gray-600 hover:border-gray-600
+    transition-all duration-150 inline-flex items-center gap-1.5;
+  }
+  .btn-link {
+    @apply px-5 h-10 border-[1.5px] border-orange rounded-lg text-sm font-semibold text-orange
+    hover:bg-orange-light transition-all duration-150
+    inline-flex items-center gap-1;
+  }
+  .input-field {
+    @apply w-full h-12 border-[1.5px] border-gray-100 rounded-lg px-4 text-base text-gray-600
+    placeholder:text-gray-300 font-sans bg-white
+    focus:border-orange focus:ring-[3px] focus:ring-orange/[0.12] focus:outline-none
+    transition-all duration-150;
+  }
+  .input-label {
+    @apply block text-sm font-medium text-navy mb-1.5;
+  }
+  .calc-card {
+    @apply bg-white border border-gray-100 rounded-xl p-5 md:p-8 shadow-calc max-w-calc mx-auto;
+  }
+  .result-area {
+    @apply bg-[#F0F7FF] rounded-lg p-5 md:p-6 mt-5;
+  }
+  .pill {
+    @apply px-3 md:px-4 py-2 border-[1.5px] border-gray-100 rounded-lg text-sm font-medium
+    text-gray-600 cursor-pointer bg-white hover:border-navy hover:bg-gray-50
+    transition-all duration-150;
+  }
+  .pill-active {
+    @apply bg-navy border-navy text-white font-semibold;
+  }
+  .preset-btn {
+    @apply px-3 md:px-4 py-2.5 border-[1.5px] border-gray-100 rounded-lg text-sm font-medium
+    text-gray-600 cursor-pointer bg-white hover:border-orange hover:bg-[#FFFBF5]
+    transition-all duration-150;
+  }
+  .preset-active {
+    @apply bg-orange-light border-orange text-orange font-semibold;
+  }
+  .tool-card {
+    @apply bg-white border border-gray-100 rounded-xl p-5 md:p-6
+    hover:border-orange hover:shadow-calc-hover
+    transition-all duration-200 block;
+  }
+  .faq-item {
+    @apply bg-white border border-gray-100 rounded-lg overflow-hidden;
+  }
+  .formula-box {
+    @apply bg-white border-l-4 border-orange py-3 px-4 rounded-r-lg font-mono text-sm text-gray-600;
+  }
+  .example-box {
+    @apply bg-[#F0F7FF] rounded-lg p-5;
+  }
+  .alert-info {
+    @apply bg-[#F0F7FF] border-l-4 border-info rounded-r-lg p-4;
+  }
+  .alert-warning {
+    @apply bg-[#FFFBEB] border-l-4 border-warning rounded-r-lg p-4;
+  }
+  .alert-success {
+    @apply bg-[#ECFDF5] border-l-4 border-success rounded-r-lg p-4;
+  }
+  .alert-error {
+    @apply bg-[#FEF2F2] border-l-4 border-error rounded-r-lg p-4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
