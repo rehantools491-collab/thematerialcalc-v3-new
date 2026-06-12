@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-white/40">
-          <span>&copy; {new Date().getFullYear()} ThematerialCalc.com. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} ThematerialCalc.com. All rights has reserved.</span>
           <span>We don&apos;t store your calculations or personal data.</span>
         </div>
       </div>
